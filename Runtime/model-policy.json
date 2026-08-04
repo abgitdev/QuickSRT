@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "policy_id": "quicksrt-whisper-large-v3-49e6aa286ad60c14352c404340ded53710378a11",
+  "repository_id": "mlx-community/whisper-large-v3-mlx",
+  "revision": "49e6aa286ad60c14352c404340ded53710378a11",
+  "files": {
+    "config.json": {
+      "sha256": "34982ce6ae286095000f82ae9583b3431639e8b092bf60c961f203745e6500e3",
+      "size": 269,
+      "format": "json"
+    },
+    "weights.npz": {
+      "sha256": "05ff791ce3630fae47e7c51004e9666204d786246ec07cac6110af768099b40d",
+      "size": 3083520416,
+      "format": "npz",
+      "entries": 1259,
+      "uncompressed_size": 3083302432,
+      "maximum_entry_size": 132777088
+    }
+  },
+  "config": {
+    "model_type": "whisper",
+    "n_mels": 128,
+    "n_audio_ctx": 1500,
+    "n_audio_state": 1280,
+    "n_audio_head": 20,
+    "n_audio_layer": 32,
+    "n_vocab": 51866,
+    "n_text_ctx": 448,
+    "n_text_state": 1280,
+    "n_text_head": 20,
+    "n_text_layer": 32
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "platform": {
+    "system": "Darwin",
+    "machine": "arm64",
+    "minimum_macos": "15.0"
+  },
+  "python": {
+    "bootstrap_minimum": "3.9.0",
+    "minimum": "3.13.0",
+    "maximum_exclusive": "3.14.0",
+    "packaged_version": "3.13.14",
+    "installer": {
+      "url": "https://www.python.org/ftp/python/3.13.14/python-3.13.14-macos11.pkg",
+      "sha256": "8e58affb218c155a1dfdc27b291f817129669f8760e7a297adb2e4439ba5d2e8",
+      "developer_id_team": "BMM5U3QVKW",
+      "certificate_sha256": "5dbaf27e6e8a6dda57a129491fd69a183ca8b0d4a8f895946d569db534d45d3b"
+    }
+  },
+  "components": {
+    "click": "8.4.2",
+    "filelock": "3.32.2",
+    "mlx": "0.32.0",
+    "mlx-metal": "0.32.0",
+    "mlx-whisper": "0.4.3",
+    "pip": "26.2",
+    "requests": "2.34.2",
+    "setuptools": "83.0.0",
+    "urllib3": "2.7.0"
+  }
+}

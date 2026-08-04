@@ -1,0 +1,60 @@
+QuickSRT third-party notices
+============================
+
+QuickSRT source code is licensed separately under the project LICENSE file.
+The following components are not relicensed by that file.
+
+FFmpeg and ffprobe
+------------------
+
+QuickSRT review builds include separate FFmpeg 8.1.2 command-line executables
+named `ffmpeg` and `ffprobe`. They are native arm64 builds licensed under
+LGPL-2.1-or-later. The reviewed configuration explicitly disables GPL,
+version3, nonfree and auto-detected external libraries; it is not the former
+GPLv3-enabled Tessus build.
+
+The exact upstream source URL and SHA-256, complete configure flags, recorded
+toolchain, binary SHA-256 values and build procedure are in `FFmpeg/manifest.json`,
+`FFmpeg/configure.flags` and `FFmpeg/README.md`. The LGPL 2.1 text is in
+`FFmpeg/COPYING.LGPLv2.1`. Corresponding unmodified source:
+
+    https://ffmpeg.org/releases/ffmpeg-8.1.2.tar.xz
+    SHA-256: 464beb5e7bf0c311e68b45ae2f04e9cc2af88851abb4082231742a74d97b524c
+
+Do not replace these files with an arbitrary build. Enabling `--enable-gpl`
+changes the applicable license; combining it with `--enable-version3` makes the
+build GPL-3.0-or-later. `--enable-nonfree` produces an unredistributable build.
+Any future configuration change requires a new license review, exact source,
+notices, flags and hashes.
+
+Python runtime
+--------------
+
+QuickSRT review builds contain a newly generated runtime based on the official
+python.org universal2 Python 3.13.14 macOS installer. The installer URL, SHA-256
+and expected Developer ID Installer identity are pinned in
+`Runtime/runtime-policy.json`. Python is distributed under the Python Software
+Foundation License Version 2; its complete license remains at
+`Python.framework/Versions/3.13/lib/python3.13/LICENSE.txt` in the runtime.
+
+Python packages are installed from hash-locked wheels listed in
+`Runtime/requirements.lock`; a developer virtual environment is not copied.
+Exact package versions and declared licenses are listed in
+`PYTHON_DEPENDENCY_LICENSES.md`. Wheel-provided license, notice and bundled
+component files remain in each package's metadata directories.
+
+MLX Whisper model
+-----------------
+
+The managed mlx-community/whisper-large-v3-mlx model is downloaded separately
+from Hugging Face and is not included in this Git repository, source archive or
+review app. Its model card currently declares the MIT license:
+
+    https://huggingface.co/mlx-community/whisper-large-v3-mlx
+
+Apple frameworks and language assets
+------------------------------------
+
+QuickSRT uses system frameworks supplied with macOS, including Apple
+Translation. Those frameworks and any language assets downloaded by macOS are
+provided under Apple's terms and are not part of the QuickSRT distribution.

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "upstream_version": "8.1.2",
+  "display_version": "8.1.2-quicksrt",
+  "architecture": "arm64",
+  "minimum_macos": "15.0",
+  "license": "LGPL-2.1-or-later",
+  "required_ffmpeg_filters": [
+    "aresample"
+  ],
+  "source": {
+    "url": "https://ffmpeg.org/releases/ffmpeg-8.1.2.tar.xz",
+    "sha256": "464beb5e7bf0c311e68b45ae2f04e9cc2af88851abb4082231742a74d97b524c"
+  },
+  "build": {
+    "xcode": "26.6 (17F113)",
+    "apple_clang": "21.0.0 (clang-2100.1.1.101)",
+    "macos_sdk": "26.5",
+    "configure_flags": "FFmpeg/configure.flags"
+  },
+  "binaries": {
+    "ffmpeg": {
+      "sha256": "635157f24c336cbd61026f95a1f00001ed61cd8c3ee27a510903d0936a2c1b68"
+    },
+    "ffprobe": {
+      "sha256": "23ffbe612b4ca6849f27c12776527778b3a3a3de01515cfef4c2cb48370141a1"
+    }
+  }
+}

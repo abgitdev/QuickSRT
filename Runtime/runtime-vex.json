@@ -1,0 +1,23 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "https://github.com/abgitdev/QuickSRT/vex/runtime-torch-route",
+  "author": "QuickSRT maintainers",
+  "role": "Document Creator",
+  "timestamp": "2026-08-04T00:00:00Z",
+  "version": 1,
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://github.com/abgitdev/QuickSRT/security/runtime-dependency/torch"
+      },
+      "products": [
+        {
+          "@id": "pkg:pypi/mlx-whisper@0.4.3"
+        }
+      ],
+      "status": "not_affected",
+      "justification": "component_not_present",
+      "impact_statement": "QuickSRT does not ship Torch. mlx-whisper declares it for torch_whisper.py, an offline model-conversion helper that is not imported by QuickSRT's transcription or model-download routes. Scripts/runtime_dependency_check.py enforces both absence and route isolation."
+    }
+  ]
+}

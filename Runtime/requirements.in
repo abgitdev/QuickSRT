@@ -1,0 +1,23 @@
+# Direct runtime requirements and build tooling.
+#
+# Update versions deliberately, then run Scripts/update_runtime_lock.sh.
+pip==26.2
+setuptools==83.0.0
+wheel==0.47.0
+click==8.4.2
+filelock==3.32.2
+requests==2.34.2
+urllib3==2.7.0
+mlx==0.32.0
+mlx-metal==0.32.0
+mlx-whisper==0.4.3
+# mlx-whisper declares Torch for its offline PyTorch-to-MLX conversion helper.
+# QuickSRT never converts models in production, so Torch is intentionally absent.
+# These are mlx-whisper's complete non-Torch runtime requirements.
+huggingface-hub==1.26.0
+more-itertools==11.1.0
+numba==0.66.0
+numpy==2.4.6
+scipy==1.18.0
+tiktoken==0.13.0
+tqdm==4.70.0

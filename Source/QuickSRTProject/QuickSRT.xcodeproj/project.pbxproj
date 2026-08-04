@@ -1,0 +1,746 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000101 /* QuickSRTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000201 /* QuickSRTApp.swift */; };
+		100000000000000000000102 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000202 /* ContentView.swift */; };
+		100000000000000000000103 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000203 /* AppViewModel.swift */; };
+		100000000000000000000104 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000204 /* AppConstants.swift */; };
+		100000000000000000000105 /* ProjectPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000205 /* ProjectPaths.swift */; };
+		100000000000000000000106 /* QuickSRTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000206 /* QuickSRTError.swift */; };
+		100000000000000000000107 /* DurationFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000207 /* DurationFormatter.swift */; };
+		100000000000000000000108 /* VideoProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000208 /* VideoProbe.swift */; };
+		100000000000000000000109 /* ProcessRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000209 /* ProcessRunner.swift */; };
+		100000000000000000000110 /* TranscriptionPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000210 /* TranscriptionPipeline.swift */; };
+		100000000000000000000111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000211 /* Assets.xcassets */; };
+		100000000000000000000112 /* AppVersionInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000212 /* AppVersionInfoTests.swift */; };
+		100000000000000000000113 /* ProjectRootResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000213 /* ProjectRootResolverTests.swift */; };
+		100000000000000000000114 /* SRTOutputWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000214 /* SRTOutputWriter.swift */; };
+		100000000000000000000115 /* SRTOutputWriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000215 /* SRTOutputWriterTests.swift */; };
+		100000000000000000000116 /* ProcessRunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000216 /* ProcessRunnerTests.swift */; };
+		100000000000000000000117 /* ProcessOutputBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000217 /* ProcessOutputBuffer.swift */; };
+		100000000000000000000118 /* ProcessOutputBufferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000218 /* ProcessOutputBufferTests.swift */; };
+		100000000000000000000119 /* WorkspaceSafety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000219 /* WorkspaceSafety.swift */; };
+		100000000000000000000120 /* WorkspaceSafetyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000220 /* WorkspaceSafetyTests.swift */; };
+		100000000000000000000121 /* TranscriptionPipelineIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000221 /* TranscriptionPipelineIntegrationTests.swift */; };
+		100000000000000000000122 /* LogBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000222 /* LogBuffer.swift */; };
+		100000000000000000000123 /* LocalizationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000223 /* LocalizationController.swift */; };
+		100000000000000000000124 /* RuntimeDiagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000224 /* RuntimeDiagnostics.swift */; };
+		100000000000000000000125 /* OutputFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000225 /* OutputFileManager.swift */; };
+		100000000000000000000126 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000226 /* ModelManager.swift */; };
+		100000000000000000000128 /* AppControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000228 /* AppControllerTests.swift */; };
+		100000000000000000000129 /* LocalizationCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000229 /* LocalizationCatalog.swift */; };
+		100000000000000000000130 /* SRTDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000230 /* SRTDocument.swift */; };
+		100000000000000000000131 /* SubtitleTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000231 /* SubtitleTranslator.swift */; };
+		100000000000000000000132 /* AppleSubtitleTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000232 /* AppleSubtitleTranslator.swift */; };
+		100000000000000000000133 /* TimedTranscriptModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000233 /* TimedTranscriptModels.swift */; };
+		100000000000000000000134 /* SubtitleProfiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000234 /* SubtitleProfiles.swift */; };
+		100000000000000000000135 /* TargetSubtitleRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000235 /* TargetSubtitleRenderer.swift */; };
+		100000000000000000000136 /* SemanticUnitBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000236 /* SemanticUnitBuilder.swift */; };
+		100000000000000000000137 /* TargetSubtitleRendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000237 /* TargetSubtitleRendererTests.swift */; };
+		100000000000000000000138 /* TranscriptionQueueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000238 /* TranscriptionQueueController.swift */; };
+		100000000000000000000139 /* AppDataLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000239 /* AppDataLifecycle.swift */; };
+		100000000000000000000140 /* AppDataLifecycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000240 /* AppDataLifecycleTests.swift */; };
+		100000000000000000000141 /* AppleSubtitleTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000241 /* AppleSubtitleTranslatorTests.swift */; };
+		100000000000000000000142 /* ModelManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000242 /* ModelManagerTests.swift */; };
+		100000000000000000000144 /* QuickSRTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000243 /* QuickSRTUITests.swift */; };
+		100000000000000000000145 /* OutputFileManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000244 /* OutputFileManagerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		100000000000000000000201 /* QuickSRTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSRTApp.swift; sourceTree = "<group>"; };
+		100000000000000000000202 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		100000000000000000000203 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		100000000000000000000204 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		100000000000000000000205 /* ProjectPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectPaths.swift; sourceTree = "<group>"; };
+		100000000000000000000206 /* QuickSRTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSRTError.swift; sourceTree = "<group>"; };
+		100000000000000000000207 /* DurationFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationFormatter.swift; sourceTree = "<group>"; };
+		100000000000000000000208 /* VideoProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoProbe.swift; sourceTree = "<group>"; };
+		100000000000000000000209 /* ProcessRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessRunner.swift; sourceTree = "<group>"; };
+		100000000000000000000210 /* TranscriptionPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionPipeline.swift; sourceTree = "<group>"; };
+		100000000000000000000211 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		100000000000000000000301 /* QuickSRT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickSRT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		100000000000000000000212 /* AppVersionInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionInfoTests.swift; sourceTree = "<group>"; };
+		100000000000000000000213 /* ProjectRootResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRootResolverTests.swift; sourceTree = "<group>"; };
+		100000000000000000000214 /* SRTOutputWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRTOutputWriter.swift; sourceTree = "<group>"; };
+		100000000000000000000215 /* SRTOutputWriterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRTOutputWriterTests.swift; sourceTree = "<group>"; };
+		100000000000000000000216 /* ProcessRunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessRunnerTests.swift; sourceTree = "<group>"; };
+		100000000000000000000217 /* ProcessOutputBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessOutputBuffer.swift; sourceTree = "<group>"; };
+		100000000000000000000218 /* ProcessOutputBufferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessOutputBufferTests.swift; sourceTree = "<group>"; };
+		100000000000000000000219 /* WorkspaceSafety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceSafety.swift; sourceTree = "<group>"; };
+		100000000000000000000220 /* WorkspaceSafetyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceSafetyTests.swift; sourceTree = "<group>"; };
+		100000000000000000000221 /* TranscriptionPipelineIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionPipelineIntegrationTests.swift; sourceTree = "<group>"; };
+		100000000000000000000222 /* LogBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBuffer.swift; sourceTree = "<group>"; };
+		100000000000000000000223 /* LocalizationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationController.swift; sourceTree = "<group>"; };
+		100000000000000000000224 /* RuntimeDiagnostics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeDiagnostics.swift; sourceTree = "<group>"; };
+		100000000000000000000225 /* OutputFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputFileManager.swift; sourceTree = "<group>"; };
+		100000000000000000000226 /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		100000000000000000000228 /* AppControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppControllerTests.swift; sourceTree = "<group>"; };
+		100000000000000000000229 /* LocalizationCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationCatalog.swift; sourceTree = "<group>"; };
+		100000000000000000000230 /* SRTDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRTDocument.swift; sourceTree = "<group>"; };
+		100000000000000000000231 /* SubtitleTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleTranslator.swift; sourceTree = "<group>"; };
+		100000000000000000000232 /* AppleSubtitleTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSubtitleTranslator.swift; sourceTree = "<group>"; };
+		100000000000000000000233 /* TimedTranscriptModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedTranscriptModels.swift; sourceTree = "<group>"; };
+		100000000000000000000234 /* SubtitleProfiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleProfiles.swift; sourceTree = "<group>"; };
+		100000000000000000000235 /* TargetSubtitleRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetSubtitleRenderer.swift; sourceTree = "<group>"; };
+		100000000000000000000236 /* SemanticUnitBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemanticUnitBuilder.swift; sourceTree = "<group>"; };
+		100000000000000000000237 /* TargetSubtitleRendererTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetSubtitleRendererTests.swift; sourceTree = "<group>"; };
+		100000000000000000000238 /* TranscriptionQueueController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionQueueController.swift; sourceTree = "<group>"; };
+		100000000000000000000239 /* AppDataLifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataLifecycle.swift; sourceTree = "<group>"; };
+		100000000000000000000240 /* AppDataLifecycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataLifecycleTests.swift; sourceTree = "<group>"; };
+		100000000000000000000241 /* AppleSubtitleTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSubtitleTranslatorTests.swift; sourceTree = "<group>"; };
+		100000000000000000000242 /* ModelManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManagerTests.swift; sourceTree = "<group>"; };
+		100000000000000000000243 /* QuickSRTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSRTUITests.swift; sourceTree = "<group>"; };
+		100000000000000000000244 /* OutputFileManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputFileManagerTests.swift; sourceTree = "<group>"; };
+		100000000000000000000302 /* QuickSRTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickSRTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		100000000000000000000303 /* QuickSRTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickSRTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXContainerItemProxy section */
+		100000000000000000000A01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 100000000000000000000801 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 100000000000000000000601;
+			remoteInfo = QuickSRT;
+		};
+		100000000000000000000A03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 100000000000000000000801 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 100000000000000000000601;
+			remoteInfo = QuickSRT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		100000000000000000000401 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100000000000000000000404 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100000000000000000000407 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100000000000000000000501 = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000211 /* Assets.xcassets */,
+				100000000000000000000502 /* Sources */,
+				100000000000000000000505 /* QuickSRTTests */,
+				100000000000000000000506 /* QuickSRTUITests */,
+				100000000000000000000503 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		100000000000000000000502 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000504 /* QuickSRTApp */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		100000000000000000000503 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000301 /* QuickSRT.app */,
+				100000000000000000000302 /* QuickSRTTests.xctest */,
+				100000000000000000000303 /* QuickSRTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		100000000000000000000505 /* QuickSRTTests */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000212 /* AppVersionInfoTests.swift */,
+				100000000000000000000213 /* ProjectRootResolverTests.swift */,
+				100000000000000000000215 /* SRTOutputWriterTests.swift */,
+				100000000000000000000216 /* ProcessRunnerTests.swift */,
+				100000000000000000000218 /* ProcessOutputBufferTests.swift */,
+				100000000000000000000220 /* WorkspaceSafetyTests.swift */,
+				100000000000000000000221 /* TranscriptionPipelineIntegrationTests.swift */,
+				100000000000000000000228 /* AppControllerTests.swift */,
+				100000000000000000000237 /* TargetSubtitleRendererTests.swift */,
+				100000000000000000000240 /* AppDataLifecycleTests.swift */,
+				100000000000000000000241 /* AppleSubtitleTranslatorTests.swift */,
+				100000000000000000000242 /* ModelManagerTests.swift */,
+				100000000000000000000244 /* OutputFileManagerTests.swift */,
+			);
+			path = QuickSRTTests;
+			sourceTree = "<group>";
+		};
+		100000000000000000000506 /* QuickSRTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000243 /* QuickSRTUITests.swift */,
+			);
+			path = QuickSRTUITests;
+			sourceTree = "<group>";
+		};
+		100000000000000000000504 /* QuickSRTApp */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000201 /* QuickSRTApp.swift */,
+				100000000000000000000202 /* ContentView.swift */,
+				100000000000000000000203 /* AppViewModel.swift */,
+				100000000000000000000238 /* TranscriptionQueueController.swift */,
+				100000000000000000000226 /* ModelManager.swift */,
+				100000000000000000000224 /* RuntimeDiagnostics.swift */,
+				100000000000000000000223 /* LocalizationController.swift */,
+				100000000000000000000229 /* LocalizationCatalog.swift */,
+				100000000000000000000222 /* LogBuffer.swift */,
+				100000000000000000000225 /* OutputFileManager.swift */,
+				100000000000000000000204 /* AppConstants.swift */,
+				100000000000000000000205 /* ProjectPaths.swift */,
+				100000000000000000000206 /* QuickSRTError.swift */,
+				100000000000000000000207 /* DurationFormatter.swift */,
+				100000000000000000000208 /* VideoProbe.swift */,
+				100000000000000000000209 /* ProcessRunner.swift */,
+				100000000000000000000210 /* TranscriptionPipeline.swift */,
+				100000000000000000000231 /* SubtitleTranslator.swift */,
+				100000000000000000000232 /* AppleSubtitleTranslator.swift */,
+				100000000000000000000233 /* TimedTranscriptModels.swift */,
+				100000000000000000000234 /* SubtitleProfiles.swift */,
+				100000000000000000000235 /* TargetSubtitleRenderer.swift */,
+				100000000000000000000236 /* SemanticUnitBuilder.swift */,
+				100000000000000000000230 /* SRTDocument.swift */,
+				100000000000000000000214 /* SRTOutputWriter.swift */,
+				100000000000000000000217 /* ProcessOutputBuffer.swift */,
+				100000000000000000000219 /* WorkspaceSafety.swift */,
+				100000000000000000000239 /* AppDataLifecycle.swift */,
+			);
+			path = QuickSRTApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		100000000000000000000601 /* QuickSRT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100000000000000000000701 /* Build configuration list for PBXNativeTarget "QuickSRT" */;
+			buildPhases = (
+				100000000000000000000402 /* Sources */,
+				100000000000000000000401 /* Frameworks */,
+				100000000000000000000403 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickSRT;
+			productName = QuickSRT;
+			productReference = 100000000000000000000301 /* QuickSRT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		100000000000000000000602 /* QuickSRTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100000000000000000000703 /* Build configuration list for PBXNativeTarget "QuickSRTTests" */;
+			buildPhases = (
+				100000000000000000000405 /* Sources */,
+				100000000000000000000404 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				100000000000000000000A02 /* PBXTargetDependency */,
+			);
+			name = QuickSRTTests;
+			productName = QuickSRTTests;
+			productReference = 100000000000000000000302 /* QuickSRTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		100000000000000000000603 /* QuickSRTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100000000000000000000704 /* Build configuration list for PBXNativeTarget "QuickSRTUITests" */;
+			buildPhases = (
+				100000000000000000000406 /* Sources */,
+				100000000000000000000407 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				100000000000000000000A04 /* PBXTargetDependency */,
+			);
+			name = QuickSRTUITests;
+			productName = QuickSRTUITests;
+			productReference = 100000000000000000000303 /* QuickSRTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXTargetDependency section */
+		100000000000000000000A02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 100000000000000000000601 /* QuickSRT */;
+			targetProxy = 100000000000000000000A01 /* PBXContainerItemProxy */;
+		};
+		100000000000000000000A04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 100000000000000000000601 /* QuickSRT */;
+			targetProxy = 100000000000000000000A03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXProject section */
+		100000000000000000000801 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					100000000000000000000601 = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+					100000000000000000000602 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = 100000000000000000000601;
+					};
+					100000000000000000000603 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = 100000000000000000000601;
+					};
+				};
+			};
+			buildConfigurationList = 100000000000000000000702 /* Build configuration list for PBXProject "QuickSRT" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 100000000000000000000501;
+			productRefGroup = 100000000000000000000503 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				100000000000000000000601 /* QuickSRT */,
+				100000000000000000000602 /* QuickSRTTests */,
+				100000000000000000000603 /* QuickSRTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		100000000000000000000403 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000111 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		100000000000000000000402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000101 /* QuickSRTApp.swift in Sources */,
+				100000000000000000000102 /* ContentView.swift in Sources */,
+				100000000000000000000103 /* AppViewModel.swift in Sources */,
+				100000000000000000000104 /* AppConstants.swift in Sources */,
+				100000000000000000000105 /* ProjectPaths.swift in Sources */,
+				100000000000000000000106 /* QuickSRTError.swift in Sources */,
+				100000000000000000000107 /* DurationFormatter.swift in Sources */,
+				100000000000000000000108 /* VideoProbe.swift in Sources */,
+				100000000000000000000109 /* ProcessRunner.swift in Sources */,
+				100000000000000000000110 /* TranscriptionPipeline.swift in Sources */,
+				100000000000000000000114 /* SRTOutputWriter.swift in Sources */,
+				100000000000000000000117 /* ProcessOutputBuffer.swift in Sources */,
+				100000000000000000000119 /* WorkspaceSafety.swift in Sources */,
+				100000000000000000000122 /* LogBuffer.swift in Sources */,
+				100000000000000000000123 /* LocalizationController.swift in Sources */,
+				100000000000000000000124 /* RuntimeDiagnostics.swift in Sources */,
+				100000000000000000000125 /* OutputFileManager.swift in Sources */,
+				100000000000000000000126 /* ModelManager.swift in Sources */,
+				100000000000000000000138 /* TranscriptionQueueController.swift in Sources */,
+				100000000000000000000129 /* LocalizationCatalog.swift in Sources */,
+				100000000000000000000130 /* SRTDocument.swift in Sources */,
+				100000000000000000000131 /* SubtitleTranslator.swift in Sources */,
+				100000000000000000000132 /* AppleSubtitleTranslator.swift in Sources */,
+				100000000000000000000133 /* TimedTranscriptModels.swift in Sources */,
+				100000000000000000000134 /* SubtitleProfiles.swift in Sources */,
+				100000000000000000000135 /* TargetSubtitleRenderer.swift in Sources */,
+				100000000000000000000136 /* SemanticUnitBuilder.swift in Sources */,
+				100000000000000000000139 /* AppDataLifecycle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100000000000000000000405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000112 /* AppVersionInfoTests.swift in Sources */,
+				100000000000000000000113 /* ProjectRootResolverTests.swift in Sources */,
+				100000000000000000000115 /* SRTOutputWriterTests.swift in Sources */,
+				100000000000000000000116 /* ProcessRunnerTests.swift in Sources */,
+				100000000000000000000118 /* ProcessOutputBufferTests.swift in Sources */,
+				100000000000000000000120 /* WorkspaceSafetyTests.swift in Sources */,
+				100000000000000000000121 /* TranscriptionPipelineIntegrationTests.swift in Sources */,
+				100000000000000000000128 /* AppControllerTests.swift in Sources */,
+				100000000000000000000137 /* TargetSubtitleRendererTests.swift in Sources */,
+				100000000000000000000140 /* AppDataLifecycleTests.swift in Sources */,
+				100000000000000000000141 /* AppleSubtitleTranslatorTests.swift in Sources */,
+				100000000000000000000142 /* ModelManagerTests.swift in Sources */,
+				100000000000000000000145 /* OutputFileManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100000000000000000000406 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000144 /* QuickSRTUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		100000000000000000000901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		100000000000000000000902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		100000000000000000000903 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = QuickSRT;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSDesktopFolderUsageDescription = "QuickSRT opens selected videos and saves the SRT files you request next to them.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1;
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-file-prefix-map",
+					"$(SRCROOT)=/Build/QuickSRT/Source/QuickSRTProject",
+					"-debug-prefix-map",
+					"$(SRCROOT)=/Build/QuickSRT/Source/QuickSRTProject",
+					"-coverage-prefix-map",
+					"$(SRCROOT)=/Build/QuickSRT/Source/QuickSRTProject",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.quicksrt.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		100000000000000000000904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_COVERAGE_MAPPING = NO;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEAD_CODE_STRIPPING = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_CODE_COVERAGE = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
+				GENERATE_PROFILING_CODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = QuickSRT;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSDesktopFolderUsageDescription = "QuickSRT opens selected videos and saves the SRT files you request next to them.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-file-prefix-map",
+					"$(SRCROOT)=/Build/QuickSRT/Source/QuickSRTProject",
+					"-debug-prefix-map",
+					"$(SRCROOT)=/Build/QuickSRT/Source/QuickSRTProject",
+					"-coverage-prefix-map",
+					"$(SRCROOT)=/Build/QuickSRT/Source/QuickSRTProject",
+					"-file-prefix-map",
+					"$(OBJROOT)=/Build/QuickSRT/Objects",
+					"-debug-prefix-map",
+					"$(OBJROOT)=/Build/QuickSRT/Objects",
+					"-file-prefix-map",
+					"$(SYMROOT)=/Build/QuickSRT/Products",
+					"-debug-prefix-map",
+					"$(SYMROOT)=/Build/QuickSRT/Products",
+					"-file-prefix-map",
+					"$(DSTROOT)=/Build/QuickSRT/Install",
+					"-debug-prefix-map",
+					"$(DSTROOT)=/Build/QuickSRT/Install",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.quicksrt.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = all;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_SERIALIZE_DEBUGGING_OPTIONS = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		100000000000000000000905 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.quicksrt.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickSRT.app/Contents/MacOS/QuickSRT";
+			};
+			name = Debug;
+		};
+		100000000000000000000906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.quicksrt.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickSRT.app/Contents/MacOS/QuickSRT";
+			};
+			name = Release;
+		};
+		100000000000000000000907 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.quicksrt.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TEST_TARGET_NAME = QuickSRT;
+			};
+			name = Debug;
+		};
+		100000000000000000000908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.quicksrt.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TEST_TARGET_NAME = QuickSRT;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		100000000000000000000701 /* Build configuration list for PBXNativeTarget "QuickSRT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100000000000000000000903 /* Debug */,
+				100000000000000000000904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100000000000000000000702 /* Build configuration list for PBXProject "QuickSRT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100000000000000000000901 /* Debug */,
+				100000000000000000000902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100000000000000000000703 /* Build configuration list for PBXNativeTarget "QuickSRTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100000000000000000000905 /* Debug */,
+				100000000000000000000906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100000000000000000000704 /* Build configuration list for PBXNativeTarget "QuickSRTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100000000000000000000907 /* Debug */,
+				100000000000000000000908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 100000000000000000000801 /* Project object */;
+}

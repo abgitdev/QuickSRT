@@ -1,0 +1,147 @@
+# Xcode build products
+DerivedData/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
+# Built apps
+App/*
+!App/.gitkeep
+
+# Local runtime and model files
+Runtime/venv/
+Runtime/Support/
+Models/
+
+# Local tool binaries
+Tools/*
+!Tools/.gitkeep
+/.Tools.staging/
+/.Tools.previous/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Temporary and optional output folders
+Temp/
+tmp/
+cache/
+Cache/
+Output/
+
+# Logs may contain local user paths
+*.log
+logs/
+
+# Secrets and local environment files
+.env*
+*.pem
+*.key
+*.p8
+*.p12
+*.pfx
+*.cer
+*.crt
+*.certSigningRequest
+*.developerprofile
+*.mobileprovision
+*.provisionprofile
+
+# Crash reports and Xcode diagnostics
+*.crash
+*.ips
+*.diag
+*.hang
+*.spin
+*.spindump
+*.trace/
+*.xcresult/
+*.xcarchive/
+*.xcdistributionlogs/
+*.dSYM/
+*.profraw
+*.profdata
+*.gcda
+*.gcno
+DiagnosticReports/
+
+# Local release archives and installers
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.bz2
+*.xz
+*.zst
+*.7z
+*.rar
+*.dmg
+*.pkg
+*.iso
+
+# User media, generated subtitles, and screenshots
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.m4v
+*.webm
+*.mpeg
+*.mpg
+*.wmv
+*.flv
+*.3gp
+*.mts
+*.m2ts
+*.ogv
+*.mxf
+*.mp3
+*.m4a
+*.aif
+*.wav
+*.aiff
+*.aac
+*.caf
+*.flac
+*.ogg
+*.opus
+*.wma
+*.ape
+*.alac
+*.srt
+*.vtt
+*.ass
+*.ssa
+*.sub
+*.sbv
+*.ttml
+*.dfxp
+*.smi
+*.sami
+*.lrc
+[Ss]creenshots/
+_SCREENSHOTS/
+Screenshot *
+Screen Shot *
+Снимок экрана *
+CleanShot *
+
+# macOS metadata
+.DS_Store
+
+# Local-only AI, audit, research, memory, and private artifacts
+/_PROJECT_AUDIT/
+/_PROJECT_RESEARCH/
+/_PRIVATE/
+/_PRIVATE_CHATS/
+/_LOCAL_BUILD/
+/PROJECT_MEMORY.md
+/PROJECT_MEMORY.local.md
+/SESSION_NOTES.local.md
+/AGENTS.md
+/AGENTS.local.md
+/.codex/
+/.codex-local/
+/КАК_ПУБЛИКОВАТЬ_ПРОЕКТЫ_НА_GITHUB.md

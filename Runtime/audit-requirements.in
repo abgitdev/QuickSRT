@@ -1,0 +1,2 @@
+# CI/developer tooling only. Keep separate from the shipped runtime graph.
+pip-audit==2.10.1

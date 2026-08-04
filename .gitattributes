@@ -1,0 +1,26 @@
+# Source releases are exported from Git, never from the working directory.
+/App export-ignore
+/DerivedData export-ignore
+/Models export-ignore
+/Runtime/venv export-ignore
+/Runtime/Support export-ignore
+/Tools/ffmpeg export-ignore
+/Tools/ffprobe export-ignore
+/.Tools.staging export-ignore
+/.Tools.previous export-ignore
+/_LOCAL_BUILD export-ignore
+/_PRIVATE export-ignore
+/_PRIVATE_CHATS export-ignore
+/_PROJECT_AUDIT export-ignore
+/_PROJECT_RESEARCH export-ignore
+/.codex export-ignore
+/.codex-local export-ignore
+/PROJECT_MEMORY.md export-ignore
+/PROJECT_MEMORY.local.md export-ignore
+/SESSION_NOTES.local.md export-ignore
+/AGENTS.md export-ignore
+/AGENTS.local.md export-ignore
+/КАК_ПУБЛИКОВАТЬ_ПРОЕКТЫ_НА_GITHUB.md export-ignore
+*.xcuserstate export-ignore
+*.xcresult export-ignore
+*.log export-ignore
